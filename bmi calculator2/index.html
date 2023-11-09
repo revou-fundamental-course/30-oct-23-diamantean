@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator BMI</h1>
+        <p id="description">Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI. <br><br> Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = kg/m2.</p>
+
+		<div class="input-group">
+            <label for="gender">Jenis Kelamin</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Pria</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Wanita</label>
+        
+            </div>
+        </div>
+		<div class="input-group">
+            <label for="height">Tinggi badan (cm)</label>
+            <input type="text" id="height" />
+        </div>
+        <div class="input-group">
+            <label for="weight">Berat badan (kg)</label>
+            <input type="text" id="weight" />
+        </div>
+        <button id="btn">Hitung BMI</button>
+        <div id="result"></div>
+        <div id="description-result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
